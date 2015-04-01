@@ -1,0 +1,69 @@
+#description fichier czml
+
+les fichiers czml sont des fichiers bases sur la structure JSON et peuvent etre parsés comme tel : http://json.parser.online.fr/
+ils contiennent toutes les informations concernant les satellites et les stations au sol.
+
+structure : on se place dans la configuration par defaut de l exemple du sandcastle
+
+- info generales : id, name, version, clock(interval de temps choisi etc..) 
+-description des "accesses" ??
+-Satellite/Geoeye1-to-Satellite/ISS
+	id
+	name
+	parent
+	availability
+	decription
+	polyline :: description de la trace du satellite
+		show
+			interval
+			boolean
+			
+			interval
+			boolean
+			
+			... x21 : boolean est alternativement false et true
+					  exemple de interval : "0000-01-01T00:00:00Z/2012-03-15T10:16:06.97400000000198Z"
+				
+		width
+		material
+		followsurface
+		positions
+			references
+		
+
+-Facility/AGI-to-Satellite/ISS
+-Facility/AGI-to-Satellite/Geoeye1/Sensor/Sensor
+-AreaTarget/Pennsylvania
+	id
+	name
+	availability
+	description
+	label : description du label d affichage du satellite
+	point
+	polygon
+		positions : differente positions prises par le point d interet
+					exemple : "cartographicRadians":[
+								-1.3522077240237877,
+								0.6932383436059149,
+								0,
+								-1.3630314740519183,
+								0.6933402355423893,
+								0,
+								-1.3671958658568963,
+								0.6933164116349497,
+								0,-1.3522077240237877,
+								0.6932383436059149,
+								0
+								]
+								},
+			
+			
+		material
+	positions : position en absolu dans le referenciel tournant avec la terre
+
+
+-Facility/AGI
+-Satellite/Geoeye1
+-Satellite/Geoeye1/Sensor/Sensor
+-Satellite/ISS
+-Satellite/Molniya_1-92

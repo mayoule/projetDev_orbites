@@ -1,0 +1,41 @@
+jour1 : 
+	on re exprime le besoin
+	modelisation uml du besoin
+		use case diagramm
+		digramme de classes
+	mise en place du gantt
+		repartition taches
+		mise en place des jalons
+	discussion sur la technologie à utiliser 
+		cas envisages : matlab, python, opengl
+		on s oriente rapidement vers l opengl pour permettre les changements de points de vue
+		webgl? librairie vispy de python ? 
+	
+	à faire : telechargement des donnees, comprehension des routines, comprehension des calculs, choix de la technologie
+	
+	
+	
+	
+	
+	
+
+jour2 : 
+	test des deux librairies : opengl (osgearth) et webgl(cesium)
+	telechargement des donnees : 
+		fichiers d orbites
+		fichiers stations
+		fichier parametre rotation de la terre
+		routines C des transformations d astrologie fondamentale
+	dialogue avec le commanditaire pour re exprimer le besoin
+	
+	tests : cesium : facile d'utilisation : utilisation de node.js 
+			osgearth : plus complexe à utiliser
+			
+	conclusion : on opte pour une technologie webgl avec utilisation de la librairie cesium
+	
+	à faire : integration de scripts C dans  node.js.
+			  http://nodejs.org/api/addons.html#addons_addons
+			  
+			  
+
+		
