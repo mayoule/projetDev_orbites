@@ -1,0 +1,17 @@
+deux manieres de gerer npm : local et global
+	npm install   (mettre -g si on veut le faire en global)
+		creation d un fichier node-modules à l endroit de l install
+	
+configurer les proxy : 
+	npm config set proxy http://10.0.4.2:3128
+	npm config set https-proxy http://10.0.4.2:3128
+
+problemes relatifs a l installation de node.js
+
+manque de modules : npm install (il ouvre package.json et il lit les dependencies)
+			(Error: ENOENT, stat 'C:\Users\MLalanne\AppData\Roaming\npm') :: creer dossier vide npm
+
+			
+architecture test 1 : 
+	helloworld.html
+	script1.js

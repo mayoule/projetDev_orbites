@@ -2,7 +2,15 @@
     "use strict";
     /*global console,require,__dirname,process*/
     /*jshint es3:false*/
-
+	
+	function fichier() {
+		var fs = require("fs");
+		var contenu;
+		contenu=fs.readFileSync("C:/Users/Actif/Documents/cours_lalanne/projetdev_lalanne/projetDev_orbites/note_install_nodejs.txt","UTF-8");
+		console.log(contenu);
+	}
+	fichier();
+	
     var express = require('express');
     var compression = require('compression');
     var url = require('url');

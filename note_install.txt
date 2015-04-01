@@ -1,9 +1,0 @@
-problemes relatifs a l installation de node.js
-
-manque de modules : npm install (il ouvre package.json et il lit les dependencies)
-			(Error: ENOENT, stat 'C:\Users\MLalanne\AppData\Roaming\npm') :: creer dossier vide npm
-
-			
-architecture test 1 : 
-	helloworld.html
-	script1.js
